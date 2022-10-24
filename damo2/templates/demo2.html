@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>for语句</title>
+</head>
+<body>
+<table>
+    <thead> <!--thead定义表格表头-->
+    <tr> <!--tr标签包含td和th标签-->
+        <!--th是表头单元格表头信息-->
+        <th>书名</th>
+        <th>作者</th>
+        <th>价格</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for book in books %}
+    <tr>
+        <!--td是单元格里面的数据-->
+        <td>{{book.name}}</td>
+        <td>{{book.author}}</td>
+        <td>{{book.price}}</td>
+    </tr>
+    {%endfor%}
+    </tbody>
+</table>
+
+</body>
+</html>

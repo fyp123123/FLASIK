@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>宏的模块</title>
+</head>
+<body>
+{%from 'forms.html' import input,textarea with context%}   <!--with context 可以导入宏中的变量-->
+<div style="color:#0000FF;">
+    <p>用户名:{{input('usename',placeholder='ceshi ')}}</p>  <!--placeholder占位符-->
+    <p>密码:{{input('password',type='password')}}</p>
+    <p>详情:{{textarea('Usename')}}</p>
+    <p>登录:{{input('submit',type='submit',value='登录')}}</p>
+
+</div>
+</body>
+</html>

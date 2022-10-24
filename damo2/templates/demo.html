@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>if语句</title>
+</head>
+<body>
+{%if age >18 %}
+    <div style ='font-size:100px'>你已经成年</div>
+{%elif age <18 %}
+    <div>你还没成年</div>
+{%else%}
+    <div>你刚成年</div>
+{%endif%}
+
+<table> <!--表单标签-->
+    <thead>  <!--定义表格表头-->
+    <tr><!--表格行thead标签中必须包含tr-->
+        <th>书名</th>  <!--单元格标头信息-->
+        <th>作者</th>
+        <th>价格</th>
+    </tr>
+    </thead>
+    <tbody><!--单元格正文标签-->
+    {%for book in books %}
+    <tr>
+        <td>{{book.name}}</td> <!--表格行-->
+        <td>{{book.author}}</td>
+        <td>{{book.price}}</td>
+    </tr>
+    {%endfor%}
+
+    </tbody>
+</table>
+
+</body>
+</html>

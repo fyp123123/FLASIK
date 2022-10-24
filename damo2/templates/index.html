@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+</head>
+<body>
+
+<h1>我的兴趣是{{game}}</h1>
+<h2>我的爱好{{interest}}</h2>
+<p>你的use姓名是{{user.usename}},你的use年纪是{{user.age}}</p>
+<p>你的person姓名是{{person.name|upper}},你的person年纪是{{person.age}}</p>
+<p style="background-color : red">safe过滤器</p>
+<!--内置过滤器如：upper,用|来调用，常用的内置过滤器有abs(value)返回绝对值，upper(value)转化大写，lower(value)转化小写-->
+
+<p>
+    {%if user.age is even %}
+    age 为{{user.age}}
+    {%else%}
+    不是偶数
+    {%endif%}
+
+    <!--is 后面接测试器，如是否都为大写upper，小写lower，偶数even-->
+</p>
+
+</body>
+</html>

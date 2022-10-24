@@ -1,0 +1,25 @@
+{%extends "base.html"%}
+{%block title %} 网址首页 {%endblock%}
+{%block body %}
+{{super()}}
+<h3>这是网址首页(product.html)的内容</h3>
+<p>{{get_global("李白")}}</p>  <!--全局变量-->
+<!--导入include.html 文件，路径写相对路径-->
+<!--include 可以将代码复制到指定位置-->
+{% include "_include.html"%}
+{% with off=50 %}
+   你的年纪为：{{off}}
+   <!--with 语句设置局部变量-->
+{%autoescape false%}
+<p>这里关闭了自动转意</p>
+<p>with_not_be_escape$&</p>
+{%endautoescape%}
+{%autoescape true%}
+<p>这里开启了自动转意</p>
+<p>&*,with_not_be_escape</p>
+{%endautoescape%}
+<p>current time is :{{current_time()}}</p>
+<p>current day is :{{current_time("%Y-%m-%d")}}</p>
+{%endwith%}
+<p>{{self.title()}}</p>
+{%endblock%}

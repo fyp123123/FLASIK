@@ -1,0 +1,9 @@
+<!--定义宏,作用是在模块中重复利用代码，防止代码冗余-->
+{%macro input(name,placeholder='',value='',type='text')%}
+  <input type="{{type}}" value="{{value|escape}}" name="{{name}}" placeholder="{{placehodler}}"/>
+<!--escape 测试器:是否被转义-->
+{%endmacro%}
+
+{%macro textarea(name,value='',cols="50",rows="10",maxlength="20",type='text')%}
+  <textarea name="{{name}}" value="{{value}}" cols="{{cols}}" rows="{{rows}}" ,maxlength="{{maxlength}}",type="{{type}}" >{{value|escape}}</textarea>
+{%endmacro%}

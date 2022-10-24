@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>闪现消息</title>
+</head>
+<body>
+<ul>
+    {%with messages=get_flashed_messages()%}
+      {%if messages%}
+         {%for message in messages%}
+         <li>{{message}}</li>
+         {%endfor%}
+      {%endif%}
+    {%endwith%}
+</ul>
+<h1>flask message  flashing  example</h1>
+<p>您想要登录？<a href="{{url_for('logins')}}">
+    <b>登录</b>
+</a>
+</p>
+
+</body>
+</html>

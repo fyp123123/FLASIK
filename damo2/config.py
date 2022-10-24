@@ -1,0 +1,2 @@
+DEBUG='True'
+TOKEN_KEY='123456'
