@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--练习表单注册功能-->
+    <meta charset="UTF-8">
+    <title>注册</title>
+</head>
+<body>
+   <form action="{{ url_for('register') }}" method="post" >  <!--通过url_for 函数将视图函数register反转为url-->
+       <table>
+           <tr>
+               <td>用户名：</td>
+               <td><input type="text" name="username"></td>
+           </tr>
+           <tr>
+               <td>邮箱：</td>
+               <td><input type="text" name="email"></td>
+           </tr>
+           <tr>
+               <td>密码：</td>
+               <td><input type="password" name="password"></td>
+           </tr>
+           <tr>
+               <td>确认密码：</td>
+               <td><input type="password" name="confirm_password"></td>
+           </tr>
+           <tr>
+               <td></td>
+               <td><input type="submit" value="提交"></td>
+           </tr>
+
+
+       </table>
+        <!--ul标签是无续列，后面跟li便签-->
+        <ul>
+            {% for message in get_flashed_messages() %}
+            <!--读取flash闪现消息-->
+            <li>{{message}}</li>
+            {%endfor%}
+
+        </ul>
+
+   </form>
+
+</body>
+</html>

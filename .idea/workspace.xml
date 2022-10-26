@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a19900be-8ceb-4c66-b4cf-bc6edaecf0fd" name="Default Changelist" comment="提交damo2，flask通过数据库增删改查" />
+    <list default="true" id="a19900be-8ceb-4c66-b4cf-bc6edaecf0fd" name="Default Changelist" comment="提交damo2，flask通过数据库增删改查">
+      <change afterPath="$PROJECT_DIR$/formlearn/app.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/formlearn/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/formlearn/templates/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/formlearn/templates/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/damo2/FLASK_SQL.py" beforeDir="false" afterPath="$PROJECT_DIR$/damo2/FLASK_SQL.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,8 +17,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -143,8 +150,9 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/python37",
+    "last_opened_file_path": "D:/python37/code_20220919",
     "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
     "two.files.diff.last.used.file": "D:/python37/FLASIK/11.py"
   },
@@ -169,7 +177,7 @@
       <recent name="D:\python37\FLASIK\damo2" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.create_phone">
+  <component name="RunManager" selected="Python.app (1)">
     <configuration name="Unnamed" type="CompoundRunConfigurationType">
       <toRun name="FLASIK" type="PythonConfigurationType" />
       <method v="2" />
@@ -244,7 +252,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="app" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="app (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="FLASIK" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -257,7 +265,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/damo2/app.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/formlearn/app.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -334,20 +342,20 @@
     </configuration>
     <list>
       <item itemvalue="Python.FLASIK" />
+      <item itemvalue="Python.app (1)" />
       <item itemvalue="Python.create_phone" />
       <item itemvalue="Python.phone" />
-      <item itemvalue="Python.app" />
       <item itemvalue="Python.FLASK_SQL" />
       <item itemvalue="Python.selects" />
       <item itemvalue="复合.Unnamed" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.app (1)" />
         <item itemvalue="Python.create_phone" />
         <item itemvalue="Python.FLASK_SQL" />
         <item itemvalue="Python.phone" />
         <item itemvalue="Python.selects" />
-        <item itemvalue="Python.app" />
       </list>
     </recent_temporary>
   </component>
@@ -372,7 +380,7 @@
       <workItem from="1665452249531" duration="13757000" />
       <workItem from="1665538674583" duration="9322000" />
       <workItem from="1666079117125" duration="17214000" />
-      <workItem from="1666575480994" duration="5059000" />
+      <workItem from="1666575480994" duration="30092000" />
     </task>
     <task id="LOCAL-00001" summary="提交damo2，flask通过数据库增删改查">
       <created>1666579888808</created>
@@ -443,6 +451,7 @@
     <SUITE FILE_PATH="coverage/FLASIK$11.coverage" NAME="11 覆盖结果" MODIFIED="1666262016423" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.." />
     <SUITE FILE_PATH="coverage/FLASIK$phone.coverage" NAME="phone 覆盖结果" MODIFIED="1665471937507" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.." />
     <SUITE FILE_PATH="coverage/FLASIK$app.coverage" NAME="app 覆盖结果" MODIFIED="1663838345495" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.." />
+    <SUITE FILE_PATH="coverage/FLASIK$app__1_.coverage" NAME="app (1) 覆盖结果" MODIFIED="1666766193026" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/damo2/templates/demo.html">

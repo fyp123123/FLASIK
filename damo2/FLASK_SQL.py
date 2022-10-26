@@ -237,10 +237,8 @@ def remove():
     category.newses.remove(news)
     db.session.commit()
 
-
 if __name__ == '__main__':
     # 通过db.create_all把user模型映射到数据库中的表
 
     app.run()
     remove()
-
